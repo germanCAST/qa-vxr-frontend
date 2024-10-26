@@ -1,21 +1,121 @@
 {
   "rewrites": [
     {
-      "source": "/api/data/proyectos/:path*",
-      "destination": "https://qa-vxr-backend-production.up.railway.app/api/data/proyectos/:path*"
+      "source": "/api/data/proyectos/update",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/data/proyectos/update"
     },
     {
-      "source": "/api/auth/:path*",
-      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/:path*"
+      "source": "/api/data/proyectos/create",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/data/proyectos/create"
     },
     {
-      "source": "/api/casos/:path*",
-      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/:path*"
+      "source": "/api/data/proyectos/delete",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/data/proyectos/delete"
     },
     {
-      "source": "/api/defectos/:path*",
-      "destination": "https://qa-vxr-backend-production.up.railway.app/api/defectos/:path*"
+      "source": "/api/data/proyectos",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/data/proyectos"
     },
+    {
+      "source": "/api/data/proyectos/count",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/data/proyectos/count"
+    },
+
+    {
+      "source": "/api/auth/login",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/login"
+    },
+    {
+      "source": "/api/auth/count",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/count"
+    },
+    {
+      "source": "/api/auth/getAllUsuarios",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/getAllUsuarios"
+    },
+    {
+      "source": "/api/auth/getCompleteAllUsuarios",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/getCompleteAllUsuarios"
+    },
+    {
+      "source": "/api/auth/updateUsuario",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/updateUsuario"
+    },
+    {
+      "source": "/api/auth/createUser",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/createUser"
+    },
+    {
+      "source": "/api/auth/deleteUser",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/auth/deleteUser"
+    },
+
+    {
+      "source": "/api/casos/count",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/count"
+    },
+    {
+      "source": "/api/casos/getCasosById/:id",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/getCasosById/:id"
+    },
+    {
+      "source": "/api/casos/getCasosPruebaById/:id",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/getCasosPruebaById/:id"
+    },
+    {
+      "source": "/api/casos/getAllCasosUso",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/getAllCasosUso"
+    },
+    {
+      "source": "/api/casos/getAllCasosPrueba",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/getAllCasosPrueba"
+    },
+    {
+      "source": "/api/casos/updateCasoPrueba",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/updateCasoPrueba"
+    },
+    {
+      "source": "/api/casos/updateCasoUso",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/updateCasoUso"
+    },
+    {
+      "source": "/api/casos/crearCasoPrueba",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/crearCasoPrueba"
+    },
+    {
+      "source": "/api/casos/deleteCasoPrueba",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/deleteCasoPrueba"
+    },
+    {
+      "source": "/api/casos/deleteCasoUso",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/deleteCasoUso"
+    },
+    {
+      "source": "/api/casos/crearCasoUso",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/casos/crearCasoUso"
+    },
+
+    {
+      "source": "/api/defectos/getDefectosById/:id",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/defectos/getDefectosById/:id"
+    },
+    {
+      "source": "/api/defectos/getAllDefectos",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/defectos/getAllDefectos"
+    },
+    {
+      "source": "/api/defectos/updateDefecto",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/defectos/updateDefecto"
+    },
+    {
+      "source": "/api/defectos/createDefecto",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/defectos/createDefecto"
+    },
+    {
+      "source": "/api/defectos/deleteDefecto",
+      "destination": "https://qa-vxr-backend-production.up.railway.app/api/defectos/deleteDefecto"
+    },
+
     {
       "source": "/api-docs/:path*",
       "destination": "https://qa-vxr-backend-production.up.railway.app/api-docs/:path*"
