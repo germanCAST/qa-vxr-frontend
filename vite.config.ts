@@ -11,7 +11,9 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: process.env.VITE_API_URL || "http://localhost:5000", // Usa VITE_SUPABASE_URL o el valor por defecto si no está definido
+        target:
+          process.env.VITE_API_URL ||
+          "https://qa-vxr-backend-production.up.railway.app", // Usa VITE_SUPABASE_URL o el valor por defecto si no está definido
         changeOrigin: true,
         secure: false, // Cambiar a true si necesitas que la conexión sea segura
       },
