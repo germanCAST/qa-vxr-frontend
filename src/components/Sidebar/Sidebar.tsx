@@ -58,6 +58,12 @@ const Sidebar: React.FC<SidebarProps> = ({ user }) => {
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               {user?.type || "Tipo de usuario"}
+              <Link
+                to="/"
+                className="block py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 font-medium"
+              >
+                Cerrar Sesión
+              </Link>
             </p>
           </div>
           <img
