@@ -1,10 +1,6 @@
 // src/pages/Login.tsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import * as dotenv from "dotenv";
-
-// Cargar las variables de entorno desde el archivo .env
-dotenv.config();
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +9,6 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
-    console.log(`API_URL: ${process.env.VITE_API_URL}`);
     e.preventDefault();
     setError("");
     try {

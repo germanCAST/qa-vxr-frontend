@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 
 // Cargar las variables de entorno desde el archivo .env
 dotenv.config();
-
+console.log(`API_URL: ${process.env.VITE_API_URL}`);
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
